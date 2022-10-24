@@ -1,0 +1,7 @@
+// * Main SCSS files which needed in the files in the below section.
+@import "./abstract//colors.scss";
+@import "./abstract/breakpoints.scss";
+@import "./abstract/mixins.scss";
+@import "./abstract/variables.scss";
+
+@import "./base/common.scss";

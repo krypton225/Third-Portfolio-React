@@ -1,4 +1,4 @@
-@import "../src/scss/abstract/variables.scss";
+@import "../src/scss/index-all.scss";
 
 * {
   margin: 0;
@@ -11,13 +11,24 @@ html {
   font-size: $font-size-base;
 }
 
+::selection {
+  background-color: map-get($colors, "green-2");
+  color: white;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", "Lato", sans-serif;
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
 }
 
 a {

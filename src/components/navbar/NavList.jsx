@@ -1,6 +1,7 @@
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
 
-function NavList({ isActiveComponent, setActiveComponent, toggleClass }) {
+function NavList({ isActiveComponent, toggleClass }) {
 
     return (
         <>
@@ -8,27 +9,27 @@ function NavList({ isActiveComponent, setActiveComponent, toggleClass }) {
                 <CloseIcon id="close-icon" onClick={toggleClass} />
 
                 <li className="navbar__list__item">
-                    <a href="/" className="navbar__list__item__link">home</a>
+                    <Link to="/" className="navbar__list__item__link">home</Link>
                 </li>
 
                 <li className="navbar__list__item">
-                    <a href="#about" className="navbar__list__item__link">about</a>
+                    <Link to="/about" className="navbar__list__item__link">about</Link>
                 </li>
 
                 <li className="navbar__list__item">
-                    <a href="/" className="navbar__list__item__link">portfolio</a>
+                    <Link to="/portfolio" className="navbar__list__item__link">portfolio</Link>
                 </li>
 
                 <li className="navbar__list__item">
-                    <a href="/" className="navbar__list__item__link">testimonials</a>
+                    <Link to="/testimonials" className="navbar__list__item__link">testimonials</Link>
                 </li>
 
                 <li className="navbar__list__item">
-                    <a href="/" className="navbar__list__item__link">works</a>
+                    <Link to="/works" className="navbar__list__item__link">works</Link>
                 </li>
 
                 <li className="navbar__list__item">
-                    <a href="/" className="navbar__list__item__link">contact</a>
+                    <Link to="/contact" className="navbar__list__item__link">contact</Link>
                 </li>
             </ul>
         </>

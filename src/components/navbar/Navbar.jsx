@@ -21,7 +21,7 @@ function Navbar() {
                 <div className="row">
                     <Logo />
                     <Hamburger isActiveComponent={isActiveComponent} toggleClass={toggleClass} />
-                    <NavList isActiveComponent={isActiveComponent} setActiveComponent={setActiveComponent} toggleClass={toggleClass} />
+                    <NavList isActiveComponent={isActiveComponent} toggleClass={toggleClass} />
                 </div>
             </div>
         </nav>
