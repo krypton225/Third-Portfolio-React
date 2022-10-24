@@ -1,0 +1,10 @@
+.navbar__logo {
+    &__text {
+        font-size: 2.6rem;
+        color: map-get($colors, "dark");
+    }
+
+    span {
+        color: map-get($colors, "green-3");
+    }
+}
