@@ -1,7 +1,12 @@
-function NavList() {
+import CloseIcon from '@mui/icons-material/Close';
+
+function NavList({ isActiveComponent, setActiveComponent, toggleClass }) {
+
     return (
         <>
-            <ul className="navbar__list">
+            <ul className={`navbar__list ${isActiveComponent ? "active" : ""}`} onClick={toggleClass}>
+                <CloseIcon id="close-icon" onClick={toggleClass} />
+
                 <li className="navbar__list__item">
                     <a href="/" className="navbar__list__item__link">home</a>
                 </li>

@@ -1,7 +1,7 @@
-function Hamburger({ openMenu, setOpenMenu }) {
+function Hamburger({ isActiveComponent, toggleClass }) {
     return (
         <>
-            <div className={`navbar__hamburger ${openMenu ? "active" : ""}`}>
+            <div className={`navbar__hamburger ${isActiveComponent ? "active" : ""}`} onClick={toggleClass}>
                 <span></span>
                 <span></span>
                 <span></span>

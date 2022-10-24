@@ -6,17 +6,17 @@
     display: none;
     z-index: 99999;
 
+    &.active {
+        span {
+            color: map-get($colors, "red-1") !important;
+        }
+    }
+
     span {
         width: 100%;
         height: 0.3rem;
         border-radius: 3rem;
         background-color: map-get($colors, "dark");
-    }
-
-    &.active {
-        span {
-            color: map-get($colors, "red-1") !important;
-        }
     }
 
     @include breakpoint(large) {
