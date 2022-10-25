@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
+
 function Logo() {
     return (
         <>
             <h1 className="navbar__logo">
-                <a href="/" className="navbar__logo__text">
+                <Link to="/" className="navbar__logo__text">
                     Patrick<span>.</span>
-                </a>
+                </Link>
             </h1>
         </>
     )
