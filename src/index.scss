@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-appearance: none;
 }
 
 html {
@@ -33,6 +34,12 @@ img {
 
 a {
   text-decoration: none !important;
+}
+
+a,
+svg,
+.tap-light-remove {
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .container {
