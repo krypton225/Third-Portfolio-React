@@ -8,17 +8,13 @@
         height: 100vh;
         position: absolute;
         top: 0;
-        right: -40rem;
+        right: -100%;
         @include flex-center-column;
         background-color: map-get($colors, "green-2");
 
         &.active {
             right: 0;
         }
-    }
-
-    @include breakpoint(small) {
-        right: -42rem;
     }
 
     svg {
