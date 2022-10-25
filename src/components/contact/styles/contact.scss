@@ -1,0 +1,82 @@
+.contact {
+    position: relative;
+    overflow: hidden;
+
+    .shape {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        z-index: -1;
+    }
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+
+        .form__action {
+            width: 100%;
+            margin: 1.7rem auto;
+
+            &:last-child {
+                text-align: center;
+            }
+
+            @include breakpoint(medium) {
+                margin: 0.5rem auto;
+            }
+        }
+
+        @include breakpoint(medium) {
+            width: 95%;
+        }
+
+        label {
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: map-get($colors, "green-2");
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 1.7rem auto;
+            border: 0.2rem solid map-get($colors, "green-2");
+            border-radius: 1rem;
+            outline: none;
+            font-size: 1.8rem;
+            font-weight: 400;
+            caret-color: map-get($colors, "green-2");
+        }
+
+        textarea {
+            min-width: 70%;
+            min-height: 10rem;
+            max-height: 18rem;
+            height: 10rem;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            width: 40%;
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            background-color: map-get($colors, "green-2");
+            color: white;
+            cursor: pointer;
+            @include transition-ease-in-out(background-color, 0.3s);
+
+            &:hover {
+                background-color: lighten(map-get($colors, "green-2"), 5%);
+            }
+
+            @include breakpoint(large) {
+                width: 100%;
+            }
+        }
+    }
+}
