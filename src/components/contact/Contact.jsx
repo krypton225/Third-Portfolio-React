@@ -1,4 +1,5 @@
 import Wave from "../waves/Wave";
+import ButtonCustom from "../button/ButtonCustom";
 import "./index.scss";
 
 function Contact() {
@@ -30,7 +31,7 @@ function Contact() {
                         </div>
 
                         <div className="form__action">
-                            <input type="submit" value="send" />
+                            <ButtonCustom myVal="send" />
                         </div>
                     </form>
                 </div>

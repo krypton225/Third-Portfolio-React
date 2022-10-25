@@ -1,0 +1,18 @@
+.my-btn {
+    width: 40% !important;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    background-color: map-get($colors, "green-2");
+    color: white;
+    cursor: pointer;
+    @include transition-ease-in-out(background-color, 0.3s);
+
+    &:hover {
+        background-color: lighten(map-get($colors, "green-2"), 5%);
+    }
+
+    @include breakpoint(large) {
+        width: 100% !important;
+    }
+}
