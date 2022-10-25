@@ -8,7 +8,6 @@ import Landing from './components/landing/Landing';
 import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/Testimonials';
-import Works from './components/works/Works';
 import Contact from './components/contact/Contact';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="testimonials" element={<Testimonials />} />
-        <Route path="works" element={<Works />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </div>

@@ -25,10 +25,6 @@ function NavList({ isActiveComponent, toggleClass }) {
                 </li>
 
                 <li className="navbar__list__item">
-                    <Link to="/works" className="navbar__list__item__link">works</Link>
-                </li>
-
-                <li className="navbar__list__item">
                     <Link to="/contact" className="navbar__list__item__link">contact</Link>
                 </li>
             </ul>
