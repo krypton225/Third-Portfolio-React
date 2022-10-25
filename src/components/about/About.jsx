@@ -3,6 +3,7 @@ import "./index.scss";
 function About() {
     return (
         <section className="about" id="about">
+
             <div className="container">
                 <div className="row">
                     <h2 className="about__title">about me</h2>

@@ -2,15 +2,6 @@
     position: relative;
     overflow: hidden;
 
-    .shape {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        bottom: -0.5rem;
-        left: 0;
-        z-index: -1;
-    }
-
     &__intro {
         @include flex-center-column;
         text-transform: capitalize;

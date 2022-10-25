@@ -8,6 +8,8 @@
 }
 
 .testimonials {
+    position: relative;
+
     &__title {
         font-size: 4rem;
         color: map-get($colors, "green-2");
